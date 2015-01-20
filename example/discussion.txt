@@ -12,7 +12,7 @@ PLAN:
    For AGN areas (with much larger intense), expt=26*12s, 12 dither patterns, each 26s short exposure 
    for AGN. For other parts in the image, I use expt=1200*2*12s, 2 long exposure with 1200s.
    In short, the noise for AGN is much larger than other parts.
-6. "imagenoise.fits" is the simulated image, "psfagn.fits" is subsampled PSF, please check.
+6. "image.fits" is the simulated image, "psfagn.fits" is subsampled PSF, please check.
 7. Run GLEE, get "image.001_es001.ps", and I use sum of the source image as the luminosity of the source.
    The range I use to sum is always fixed.
 8. The true magnitude of the source is 21.5, if I use the sum of the whole source image, the result is 21.465,
