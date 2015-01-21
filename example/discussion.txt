@@ -41,6 +41,8 @@ A: We should use the whole area because the regularisatiom algrithm requires us 
    coefficient to elimilate this bias in the end. For example, I have a wrong ruler to measure the length 
    of a table, but if we know the bias from the correct ruler, we can still get a correct answer. Actually, as I said, if I use GALFIT, each selction of fitting area and source plane resolution is a "bias method" with large scatter. And 
    the result for the example seems good using sum, may be multiple biases cancel out each other, that is just what we want.
+In summary, GALFIT is a "bias method" considering we have to choose the fitting area and resolution of source plane, it is virtually the same as summing the image, whose bias
+comes from the losing far-away parts. 
 
 Q: If you use the sum, how about other parameters like sersic index n and R_e of the source?
 A: We can totally ignore those, we are curious about the luminosity rather other find a good fit for the
