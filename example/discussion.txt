@@ -26,7 +26,7 @@ A: the intense of arc is usualy ~0.2, the noise from AGN is ~0.5, plus the bias 
 
 Q: Why not use GALFIT to model the source?
 A: I have tried many ways, I found the parameters: magnitude, sersic index n and R_e are very sensitive
-   to the area I choose to fit, the inverted source resolution. Besides, the result from GLEE is without
+   to the area I choose to fit, the inverted source resolution, each selection of the fitting area and resolution is actually a "bias method". Besides, the result from GLEE is without
    convolution, without noise and x, y for source plane are different, therefore, I am not sure these can 
    match GALFIT, while I used many "none" in GALFIT. In summay, the uncertainy is quite large using GALFIT,
    even much larger that the noise and GLEE, to get a objective and correct answer, I strongly suggest we use the sum of the source,
@@ -39,8 +39,8 @@ A: We should use the whole area because the regularisatiom algrithm requires us 
    I admit that we may lose the area far away from the center which could bring little bias, but the philosophy of simulation
    permits this bias as long as we make the simulation process stable: we can use a offset or a reduced 
    coefficient to elimilate this bias in the end. For example, I have a wrong ruler to measure the length 
-   of a table, but if we know the bias from the correct ruler, we can still get a correct answer. And 
-   the result for the example seems good, may be multiple biases cancel out each other, that is just what we want.
+   of a table, but if we know the bias from the correct ruler, we can still get a correct answer. Actually, as I said, if I use GALFIT, each selction of fitting area and source plane resolution is a "bias method" with large scatter. And 
+   the result for the example seems good using sum, may be multiple biases cancel out each other, that is just what we want.
 
 Q: If you use the sum, how about other parameters like sersic index n and R_e of the source?
 A: We can totally ignore those, we are curious about the luminosity rather other find a good fit for the
